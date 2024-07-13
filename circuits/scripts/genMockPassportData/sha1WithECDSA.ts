@@ -62,7 +62,7 @@ const sampleDataHashes = [
     ],
   ],
 ] as [number, number[]][];
-const signatureAlgorithm = "sha1WithECDSA";
+const signatureAlgorithm = "ecdsa-with-SHA1";
 const hashLen = 20;
 
 export function genMockPassportData_sha1WithECDSA(): PassportData {

@@ -209,6 +209,9 @@ export function hash(
     case "sha256WithRSASSAPSS":
       hashResult = sha256(unsignedBytesArray);
       break;
+    case "ecdsa-with-SHA1":
+      hashResult = sha1(unsignedBytesArray);
+      break;
     default:
       hashResult = sha256(unsignedBytesArray); // Default to sha256
   }
